@@ -9,6 +9,7 @@ const generateHtml = require('./src/generateHTML')
 const teamMembersArray = []
 
 const createManager = () => {
+    console.log('Please answer the following questions to build your team profile.')
     return inquirer.prompt([
         {
             name: 'name',
@@ -64,6 +65,7 @@ const createManager = () => {
         const manager = new Manager(name, id, email, officeNumber)
         teamMembersArray.push(manager)
         console.log(manager)
+        console.log('Manager successfully stored.')
     })
 }
 
