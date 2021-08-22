@@ -175,3 +175,12 @@ const writeToFile = data =>{
 
 createManager()
     .then(createEmployee)
+    .then(teamMembersArray =>{
+        return generateHtml(teamMembersArray)
+    })
+    .then(pageHtml =>{
+        return writeToFile(pageHtml)
+    })
+    .catch(err =>{
+        console.log(err)
+    })
