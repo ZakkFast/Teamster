@@ -82,7 +82,7 @@ const createTeamComplete = function(allCards){
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
-    <body>
+    <body class='bg-dark'>
         <header>
             <nav class="navbar bg-primary">
                 <h1 class="text-center w-100">Meet the Team!</h1>
