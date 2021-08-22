@@ -85,7 +85,7 @@ const createTeamComplete = function(allCards){
     <body>
         <header>
             <nav class="navbar bg-primary">
-                <h1> class="text-center w-100">Meet the Team!</h1>
+                <h1 class="text-center w-100">Meet the Team!</h1>
             </nav>
         </header>
         <main>
