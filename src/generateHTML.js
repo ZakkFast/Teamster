@@ -49,3 +49,26 @@ const createInternHtml = function(intern){
     </div>
     `
 }
+generateHtml = (data) =>{
+    cardArray = []
+
+    for(i = 0; i < data.length; i++){
+        const employee = data[i]
+        const role = employee.getRole()
+        if (role === 'Manager'){
+            const managerCard = createManagerHtml(employee)
+            cardArray.push(managerCard)
+        }
+        if(role === 'Intern'){
+            const internCard = createInternHtml(employee)
+            cardArray.push(internCard)
+        }
+        if(role === 'Engineer'){
+            const engineerCard = createEngineerHtml(employee)
+            cardArray.push(engineerCard)
+        }
+    }
+    const allCards = pageArray.join('')
+    const createTeam = createTeamComplete(allCards)
+    return createTeam
+}
