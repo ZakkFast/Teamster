@@ -162,6 +162,16 @@ const createEmployee = () => {
         }
     })
 }
+const writeToFile = data =>{
+    fs.writeFile('./dist/index.html', data, err =>{
+        if(err){
+            console.log(err)
+            return
+        } else {
+            console.log('Success! The team page has been created!')
+        }
+    })
+}
 
 createManager()
     .then(createEmployee)
